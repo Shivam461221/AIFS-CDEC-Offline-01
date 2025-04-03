@@ -1,0 +1,14 @@
+.container{
+    background-color: blue;
+    height: 20vh;
+    width: 70vw;
+    background-image: url('https://cloudblitz.in/wp-content/uploads/2022/04/Untitled_design__26_-removebg-preview.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+p{
+    font-size: 40px;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
