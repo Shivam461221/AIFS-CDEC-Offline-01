@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent>h1 {
+            background-color: red;
+        }
+
+        h1+div {
+            height: 100px;
+            background-color: blue;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="parent">
+        <h1>Hello</h1>
+        <h1>div</h1>
+        <div>
+            <h1>div 1</h1>
+        </div>
+
+        <div>
+            <h1>Div 2</h1>
+        </div>
+
+        <div>
+            <h1>div 3</h1>
+        </div>
+    </div>
+</body>
+
+</html>
