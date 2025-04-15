@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container-1 {
+            height: 200px;
+            width: 500px;
+            border: 2px solid black;
+            position: relative;
+            background-color: red;
+            
+        }
+
+        .container-2 {
+            height: 200px;
+            width: 500px;
+            border: 2px solid black;
+            position: relative;
+            left: 100px;
+            bottom: 100px;
+            background-color: blue;
+            z-index: -1;
+        }
+
+        .container-3 {
+            height: 200px;
+            width: 500px;
+            border: 2px solid black;
+            position: relative;
+            left: 200px;
+           bottom: 200px;
+           background-color: yellow;
+           z-index: -2;
+        }
+
+        .circle{
+            height: 100px;
+            width: 100px;
+            background-color: purple;
+            border-radius: 50%;
+            position: sticky;
+            left: 200px;
+            top: 0px;
+        }
+
+        .button{
+            height: 50px;
+            width: 50px;
+            background-color: brown;
+            position: fixed;
+            right: 10px;
+            bottom: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-1">
+        
+    </div>
+    <div class="circle">
+
+    </div>
+    <div class="container-2">
+
+    </div>
+    <div class="container-3">
+
+    </div>
+
+    <div class="button">
+
+    </div>
+    <div class="container-3">
+
+    </div>
+    <div class="container-3">
+
+    </div>
+</body>
+
+</html>
