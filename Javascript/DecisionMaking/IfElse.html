@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <script>
+    let num = parseInt(prompt('Enter a number'));
+
+    // if(num%2===0){
+    //     console.log('even number')
+    // }
+    // else{
+    //     console.log('Odd Number');
+    // }
+
+    if(num<0){
+        console.log('Negative number');
+    }
+    else if(num>0){
+        console.log('Positive number');
+        if(num%2===0){
+            console.log('Even number')
+        }
+        else{
+            console.log('Odd number');
+        }
+    }
+    else {
+        console.log('Zero');
+        
+    }
+   </script> 
+</body>
+</html>

@@ -1,35 +1,17 @@
-/* .container{
-    background-color: blue;
-    height: 20vh;
-    width: 70vw;
-    background-image: url('https://cloudblitz.in/wp-content/uploads/2022/04/Untitled_design__26_-removebg-preview.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-}
-
-p{
-    font-size: 40px;
-    text-align: center;
-    font-family: 'Times New Roman', Times, serif;
-} */
-
-/* h1{
-    background-color: red;
-    color: purple;
-}
-
-p{
-    background-color: yellow;
-} */
-
-.div{
+.parent {
     height: 300px;
-    background-color: red;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
 }
 
-#div-1{
-    border: 5px solid black;
-    border-radius: 50%;
-    height: 200px;
-    width: 200px;
+.child {
+    height: 150px;
+    border: 2px solid red;
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
