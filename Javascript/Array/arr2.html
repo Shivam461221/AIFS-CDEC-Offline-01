@@ -1,0 +1,61 @@
+<script>
+    // add - push(element), unshift(element), splice()
+    // remove - pop(), shift(), splice(), 
+
+    let arr = [1, 2, 3, 4, 5, 6, 8, 9, 10];
+
+    console.log(arr);
+
+    // for(let i=0; i<arr.length;i++){
+    //     console.log(arr[i]*2);
+    // }
+
+    //for in loop - it returns indexes of array elements
+    // for(let i in arr){
+    //     console.log(i);
+    // }
+
+    //for of loop - it returns elements of an array
+    // for(let element of arr){
+    //     console.log(element);
+    // }
+
+    //For each loop 
+    // arr.forEach((element)=>{
+    //     console.log(element);
+    // })
+
+    arr.push(11);  //add at end
+
+    console.log(arr);
+
+    arr.unshift(-1); //add at starting
+
+    console.log(arr);
+
+    arr.splice(7, 0, 7, 8);  // splice(index, number of elements to remove, actual value) add at specific index
+
+    console.log(arr);
+
+    arr.splice(1, 4); // remove from specific index
+
+    console.log(arr);
+
+    arr.pop();  // remove from end
+
+    console.log(arr);
+
+    arr.shift();  // remove fron starting
+
+    console.log(arr);
+
+
+    //replace
+    //arr.splice(4, 1, 18);
+    arr[4] = 18;
+
+     console.log(arr);
+
+     
+
+</script>
