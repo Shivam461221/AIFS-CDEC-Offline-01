@@ -1,0 +1,45 @@
+<script>
+    let name = 'Cloudblitz';
+
+    console.log(name.split('').reverse().join(''));
+
+    // for(let i =0; i<name.length;i++){
+    //     console.log(name[i]);
+    // }
+
+    for(let ch of name){
+       // console.log(ch);
+    }
+
+    console.log(name.charAt(3));
+
+ 
+    let newName = name.substring(3);   // substring(starting index, index-1)
+
+    console.log(newName);
+
+    let str = 'a-ghasgh-hadjhd-'
+
+    let newArr = str.split(/(a)/);
+
+    console.log(newArr);
+
+    console.log(name.substring(0,4)+'c'+name.substring(5));   //replace character
+
+    console.log(newArr.join('a'));
+
+    let str3 = 'Indore';
+
+    let arr = new Array();
+
+    for(let char of str3){       //convert string into array without build in method
+        arr.push(char);
+    }
+
+    console.log(arr);
+
+    console.log(arr.reverse().join(''));        //reverse a string
+
+
+
+</script>
