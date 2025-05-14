@@ -1,0 +1,31 @@
+<script>
+    const person = {
+        name:"Shivam",
+        age:25,
+        isMarries:false
+    };
+
+    const {name, age} = person;  //destructuring 
+
+    console.log(name +", "+age);
+
+    let arr = [10,20,30];
+
+    let [x,,z] = arr;   
+
+    console.log(x+' '+' '+z);
+
+    const person2 = person;  //copy - changes will reflect on original object
+
+    console.log(person2);
+
+    person2.name='Sourabh';
+
+    console.log(person);
+
+    const person3 = {...person};  //clone - changes will not reflect on original object
+
+
+
+
+</script>
