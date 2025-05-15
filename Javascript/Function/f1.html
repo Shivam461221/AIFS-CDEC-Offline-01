@@ -1,0 +1,29 @@
+<script>
+    function printTable(num){       //num - it is a parameter
+        console.log(typeof num);
+        for (let index = 1; index <= 10; index++) {
+            console.log(num*index);
+        }
+    }
+
+    printTable(2);   //argument - they are the actual values we give when we call functions
+
+    printTable(17);
+
+
+    const sum = function(x, y){     // function expression 
+        console.log("sum is "+(x+y));
+    }
+
+    sum(10,20);
+
+
+    function multiply(x, y){
+        console.log('Multiply function');
+        return x*y;
+       // console.log('Hey');  unreachable code
+    }
+
+    let x = multiply(5,2);
+    console.log(multiply(10,2));
+</script>
