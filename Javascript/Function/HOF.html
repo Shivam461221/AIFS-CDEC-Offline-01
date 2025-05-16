@@ -1,0 +1,15 @@
+<script>
+    function performMaths(a, b, operation){
+        return operation(a,b);
+    }
+
+    const sum = (a, b)=> a+b;
+
+    const difference = (a, b)=>a-b;
+
+    console.log(performMaths(10, 20, sum));
+
+    console.log(performMaths(20,10, difference));
+
+    //map, filter, reduce
+</script>
