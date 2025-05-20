@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 id="heading">Heading</h1>
+    <p id="para" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, ex.</p>
+
+    <script>
+        let headiing = document.getElementById('heading');
+        headiing.textContent = 'Title';
+       
+
+        let button = document.createElement('button');
+        button.innerText = 'Click';
+
+        document.body.appendChild(button);
+
+        button.addEventListener('click', function (event) {
+             //console.log(event.movementX);
+             button.style.backgroundColor = 'Blue';
+             heading.remove();
+        });
+
+        // button.click = function(){
+
+        // }
+
+        let para = document.getElementById('para');
+
+        para.addEventListener('mouseover', function(){
+            para.style.backgroundColor = 'yellow';
+           
+        });
+
+        para.addEventListener('mouseout', function(){
+            para.style.backgroundColor = 'red';
+           
+        });
+    </script>
+</body>
+
+</html>
