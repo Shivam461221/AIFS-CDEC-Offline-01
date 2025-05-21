@@ -2,8 +2,15 @@
       const person = {
         name:"Shivam",
         age:25,
-        isMarries:false
+        isMarries:false,
+        fun1:function(){
+          console.log(this.name);
+        }
     };
+
+    //this keyword refers to current object
+
+    person.fun1();
 
     //Object methods - Object.keys(), Object.values(), Object.entries()
 

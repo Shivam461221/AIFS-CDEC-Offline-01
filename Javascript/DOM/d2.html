@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Title</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem debitis quas perferendis accusamus eum esse dolore laudantium deleniti, quasi rem eos obcaecati corporis sed unde eius, consectetur, vel praesentium. Porro.</p>
+
+    <h2>sub-deading</h2>
+
+    <div class="container-1">
+        <h1>Container One</h1>
+    </div>
+
+    <div class="container-2" >
+        <h1>Container Two</h1>
+    </div>
+
+    <h1>Last heading</h1>
+    <script>
+       // let container = document.getElementById('container');
+       // container.textContent = 'This is my container';
+
+       // let heading = document.getElementsByTagName('h1');
+
+        //heading[1].textContent = 'Changed Heading';
+
+        //console.log(heading);
+
+        let element = document.querySelector('.container-2');
+
+       // element.innerText = 'Targeted Heading'
+
+       //
+        element.innerHTML = '<button>Click</button>'
+        console.log(document.body.innerHTML);
+        
+    </script>
+</body>
+</html>

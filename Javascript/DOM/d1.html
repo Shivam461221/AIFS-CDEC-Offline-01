@@ -15,7 +15,6 @@
         let headiing = document.getElementById('heading');
         headiing.textContent = 'Title';
        
-
         let button = document.createElement('button');
         button.innerText = 'Click';
 
@@ -42,6 +41,10 @@
             para.style.backgroundColor = 'red';
            
         });
+
+        document.addEventListener('click', ()=>{
+            alert('Clicked');
+        })
     </script>
 </body>
 
