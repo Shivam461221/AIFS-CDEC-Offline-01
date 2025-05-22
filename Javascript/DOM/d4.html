@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            border: 2px solid black;
+            height: 400px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 30px;
+        }
+        p{
+            background-color: green;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <p></p>
+    </div>
+    <script>
+        //keyboard events
+        let p = document.querySelector('p');
+        document.body.addEventListener('keydown', (e)=>{
+            p.textContent = e.key;
+        });
+
+        document.body.addEventListener('keyup', ()=>{
+            p.textContent = '';
+        })
+
+    </script>
+</body>
+</html>
