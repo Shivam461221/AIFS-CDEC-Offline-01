@@ -1,0 +1,26 @@
+<script>
+
+    function Person(name, age , gender){
+        this.name = name;
+        this.age = age;
+        this.gender = gender;
+    }
+
+    const per1 = new Person('Shivam', 25, 'M');
+
+    const per2 = new Person('Yash', 23, 'M');
+
+    console.log(per1);
+
+    console.log(per2);
+
+
+    //prototype inheritance 
+
+    Person.prototype.getInfo=function(){
+        return `name : ${this.name}, age : ${this.age}`;
+    }
+
+    console.log(per1.getInfo());
+
+</script>
