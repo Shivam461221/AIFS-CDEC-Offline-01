@@ -1,0 +1,27 @@
+<script>
+    let input = false;
+
+    let p1 = new Promise((resolve, reject) => {
+        if (input) {
+            resolve('Promise resolved')
+        }
+        else {
+            reject('Promise rejected');
+        }
+    });
+
+    p1
+    .then(result => console.log(result))
+    .catch(error => console.log(error));
+
+
+   async function getInfo(){
+    try{
+        
+    }
+    catch(error){
+
+    }
+   }
+
+</script>

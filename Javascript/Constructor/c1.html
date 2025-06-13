@@ -1,0 +1,47 @@
+<script>
+
+// const Yash = {
+//     firstName:"Yash",
+//     lastName:'Modi',
+//     age:25
+// }
+
+// const anugrah = {
+//     firstName:"Anugrah",
+//     lastName:'Awasthi',
+//     age:25,
+//     getInfo:function(){
+//         console.log(this.firstName);
+//     }
+// }
+
+//anugrah.getInfo();
+
+    function Person(name, age, address){
+        this.name = name;
+        this.age = age;
+        this.address = address;
+
+    }
+
+    const yash = new Person('Yash', 25, 'kalani Nagar');
+
+
+    const Shivam = new Person('Shivam', 26, 'Bhawarkua');
+
+    console.log(yash.name);
+    console.log(yash.age);
+
+    Person.prototype.isMarried;
+    yash.isMarried = true;
+
+    Person.prototype.getInfo= function(){
+        console.log(this.name +" age: "+ this.age);
+    }
+
+    yash.getInfo();
+
+    Shivam.getInfo();
+
+    console.log(yash.isMarried);
+</script>
