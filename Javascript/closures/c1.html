@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // closure - closure is a function inside function which has access to its outer function's variable,
+        //even after the outer function has completed its execution
+        //ES6
+
+        // function outer(){
+        //     let outerVariable = 10;
+        //     console.log('Outer executed');
+        //     function inner(){
+        //         console.log('Inside inner',outerVariable);
+        //     }
+
+        //     return inner;
+        // }
+
+        // const varia = outer();
+        // varia();
+
+        function counter() {
+            let count = 0;
+
+            return {
+                increment: function () {
+                    count++;
+                    console.log(count);
+                },
+                decrement: function () {
+                    count--;
+                    console.log(count);
+                },
+                get: function () {
+                    console.log(count);
+                },
+                set: function (value) {
+                    count = value;
+                    console.log(count);
+                }
+            }
+        }
+
+        let obj = counter();
+        obj.increment();
+        obj.increment();
+        obj.set(11);
+        obj.get();
+        obj.decrement();
+    </script>
+</body>
+
+</html>
