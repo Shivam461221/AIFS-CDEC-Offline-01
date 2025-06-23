@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+    // fetch('https://dummyjson.com/users')
+    //     .then(res => res.json())
+    //     .then(data => console.log(data))
+    //     .catch(error => console.log(error));
+        const API_URL = 'https://dummyjson.com/users';
+
+        async function getAllUsers(){
+            try{
+                let res = await fetch(API_URL);
+                let data = await res.json();
+                console.log(data);
+            }
+            catch(error){
+                console.log(error);
+            }
+        }
+
+        async function addUser(){
+            try{
+                // let username = "Yash";
+                // let password = "12345";
+                let res = await fetch(`${API_URL}/add`, {
+                    method:"POST",
+                    headers:{"content-Type": "application/json"},
+                    body:JSON.stringify({username: 'Yash', password:'12345'})
+                });
+
+                let data = await res.json();
+
+                console.log(data);
+            }
+            catch(error){
+                 console.log(error.message);
+            }
+        }
+
+        addUser();
+
+
+       // getAllUsers();
+
+    </script>
+</body>
+</html>
