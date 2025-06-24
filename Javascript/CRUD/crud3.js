@@ -12,7 +12,7 @@ async function getUsers() {
             <li>${user.name} 
             <button onclick="deleteUser(${user.id})" >Delete</button>
             <button onclick="editUser(${user.id}, '${user.name}', '${user.email}' )" >Edit</button></li>
-            `
+            ` 
         });
     }
     catch (error) {
