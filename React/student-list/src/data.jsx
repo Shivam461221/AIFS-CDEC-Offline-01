@@ -1,0 +1,26 @@
+export default [
+    {
+        id:101,
+        name:'Shivam',
+        course:'B.tech',
+        branch:'CS'
+    },
+    {
+        id:102,
+        name:'Yash',
+        course:'B.tech',
+        branch:'IT'
+    },
+    {
+        id:103,
+        name:'Kuldeep',
+        course:'B.tech',
+        branch:'EC'
+    },
+    {
+        id:104,
+        name:'Anugrah',
+        course:'B.tech',
+        branch:'CS'
+    }
+]
